@@ -2,12 +2,10 @@
   background-color: var(--white);
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .headerContainer {
-  width: 70%;
-
+  width: 90%;
   margin: 1.5rem;
 }
 
@@ -58,42 +56,64 @@
 
 .headerIcon {
   color: var(--blue);
+  padding: 0.5rem;
 }
 
 .headerSearch {
-  height: 2rem;
-  background-color: var(--white);
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
   border: 2px solid var(--blue);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0.5rem 0rem;
+  justify-content:space-around;
+  flex-direction: row;
   border-radius: 1rem;
-  position: absolute;
-  bottom: -5rem;
-  width: 70%;
-  font-size: 1.125rem;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  padding-right: 0.2rem;
+  
 }
 
-.headerSearchItem {
+@media only screen and (min-width: 992px) {
+#destination {
+  display: none;
+}
+}
+
+
+.headerSearchItems{
   display: flex;
   align-items: center;
-  gap: 1.875rem;
+  justify-content: space-around;
+  
 }
-
+.headerText {
+  font-size: 0.9rem;
+  color: var(--blue);
+  width: 100%;
+}
 .headerSearchInput {
   border: none;
   outline: none;
 }
 .headerSearchInput {
-  border: none;
+  border: 1px solid var(--blue);
+  border-radius: 0.5rem;
   outline: none;
   color: var(--blue);
 }
 .headerSearchText {
   color: #000;
   cursor: pointer;
+  font-size: 0.9rem;
+  background: rgb(255, 234, 234);
+  border-radius: 0.5rem;
+  width: 100%;
+  
+  
 }
+
 
 .headerSearchBtn {
   background-color: var(--blue);
@@ -107,7 +127,51 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 992px) {
   .headerList {
     gap: 1.5rem;
   }
@@ -118,5 +182,35 @@
   }
   .headerTitle {
     font-size: 1.5rem;
+  }
+
+  .headerSearch {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+    height: 25rem;
+    width: 100%;
+  }
+
+
+  .headerSearchItems:nth-child(n) {
+    border-bottom: 2px solid #000;
+    padding-bottom: 1rem;
+    /* line-break: after; */
+  }
+  .headerSearchItems{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  .headerText {
+    color: var(--blue);
+    width: 100%;
+    text-align: center;
+
   }
 }
