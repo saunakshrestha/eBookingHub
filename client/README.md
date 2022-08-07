@@ -1,4 +1,4 @@
-# Project Title
+# bookinGhar
 
 Bookinghar is a online reservation system. It is web based booking system
 
