@@ -74,13 +74,17 @@ const Header = () => {
                 'MM/dd/yyyy'
               )}`}</span>
               {openDate && (
-                <DateRange
+              
+                  <DateRange
                   editableDateInputs={true}
                   onChange={(item) => setDate([item.selection])}
                   moveRangeOnFirstSelection={false}
                   ranges={date}
                   className='date'
+                  
                 />
+               
+                
               )}
             </div>
             <div className='headerSearchItem-Item3 headerSearchItems'>

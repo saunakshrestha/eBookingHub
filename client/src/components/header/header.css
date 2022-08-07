@@ -61,32 +61,30 @@
 
 .headerSearch {
   height: 4rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border: 2px solid var(--blue);
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: row;
   border-radius: 1rem;
   margin-top: 2rem;
   width: 100%;
   font-size: 1rem;
   padding-right: 0.2rem;
-  
+  position: relative;
 }
 
 @media only screen and (min-width: 992px) {
-#destination {
-  display: none;
-}
+  #destination {
+    display: none;
+  }
 }
 
-
-.headerSearchItems{
+.headerSearchItems {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 .headerText {
   font-size: 0.9rem;
@@ -98,22 +96,22 @@
   outline: none;
 }
 .headerSearchInput {
-  border: 1px solid var(--blue);
+  border: 0.1rem solid var(--blue);
   border-radius: 0.5rem;
   outline: none;
   color: var(--blue);
-}
-.headerSearchText {
-  color: #000;
-  cursor: pointer;
-  font-size: 0.9rem;
-  background: rgb(255, 234, 234);
-  border-radius: 0.5rem;
-  width: 100%;
-  
-  
+  width: 9.5rem;
 }
 
+.headerSearchText {
+  color: rgb(18, 1, 204);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: var(--white);
+}
 
 .headerSearchBtn {
   background-color: var(--blue);
@@ -129,19 +127,25 @@
 
 .date {
   position: absolute;
-  top: 50px;
-  z-index: 2;
+  top: 3.5rem;
+  z-index: 3;
+  border: 0.1rem solid #002a66;
 }
 
+/* styling for options of adult ,children & room */
 .options {
   z-index: 2;
   position: absolute;
-  top: 50px;
-  background-color: white;
+  top: 4rem;
+  right: 6rem;
+  background-color: #fff;
   color: gray;
+  border: 0.1rem solid #002a66;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  padding: 0.3rem;
+  color: var(--blue);
 }
 .optionItem {
   width: 200px;
@@ -187,30 +191,58 @@
   .headerSearch {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: space-around;
     height: 25rem;
-    width: 100%;
+    max-width: 100%;
   }
-
 
   .headerSearchItems:nth-child(n) {
     border-bottom: 2px solid #000;
     padding-bottom: 1rem;
     /* line-break: after; */
   }
-  .headerSearchItems{
+  .headerSearchItems {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
- 
+
   .headerText {
     color: var(--blue);
     width: 100%;
     text-align: center;
+  }
+  /* date for mobile view */
+  .date {
+    max-width: 99%;
+    top: 13rem;
+  }
 
+  /* .rdrMonthAndYearWrapper {
+   
+  } */
+  .rdrMonthAndYearPickers {
+    overflow: scroll;
+  }
+
+  .rdrNextPrevButton {
+    margin: 0 !important;
+  }
+  .rdrDateDisplayItem input {
+    max-width: 99%;
+    border: 2px solid var(--blue);
+  }
+  .rdrDateDisplay {
+    max-width: 99%;
+  }
+  .rdrMonth {
+    max-width: 95%;
+  }
+
+  /* change posistion of option box of adult, children and room  */
+  .options {
+    top: 21rem;
   }
 }
