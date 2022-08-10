@@ -11,36 +11,49 @@
   gap: 0.625;
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .fpImg {
   width: 100%;
-  height: 15.625rem;
+  height: 15rem;
   object-fit: cover;
-  border-radius: 1rem;
-
 }
 
 .fpName {
-  color: var(--blue);
+  color: var(--clr-theme);
   font-weight: bold;
+  padding: 0.4rem;
 }
 
 .fpCity {
   font-weight: 300;
+  padding: 0.4rem;
 }
 
 .fpPrice {
-  font-weight: 500;
+  color: var(--clr-dark);
+  padding: 0.4rem;
+  font-size: 0.9em;
+
+
+}
+.fpRating{
+  padding: 0.4rem;
+
 }
 
 .fpRating > button {
-  background-color: #003580;
-  color: white;
-  border: none;
+  background-color: #d2164e;
+  color:#fff;
+  border-radius: 50%;
   padding: 3px;
   margin-right: 10px;
   font-weight: bold;
+  border: none;
+
 }
 
 .fpRating > span {

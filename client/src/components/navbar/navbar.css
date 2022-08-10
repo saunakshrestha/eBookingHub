@@ -1,7 +1,7 @@
 .navbar {
   height: 3.125rem;
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--clr-theme);
+  color: var(--clr-white);
   display: flex;
   justify-content: center;
 }
@@ -28,8 +28,8 @@
   border: none;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--clr-theme);
+  color: var(--clr-white);
   border: 1px solid #f6f6f6;
   border-radius: 0.5rem;
   box-shadow: rgba(45, 35, 66, 0.4);

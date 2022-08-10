@@ -10,7 +10,6 @@
 .featuredItem {
   position: relative;
   color: white;
- 
   border-radius: 1rem;
   overflow: hidden;
   height: 15.635rem;
@@ -26,7 +25,8 @@
 
 .featuredImg {
   width: 100%;
-  height: 100%;
+    height:16rem;
+
   object-fit: cover;
   border-radius: 1rem;
 
@@ -43,6 +43,9 @@
     flex-direction: column;
     width: 90%;
   }
+  .featuredImg{
+  }
+ 
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 992px) {

@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--white);
+  background-color: var(--clr-white);
   display: flex;
   justify-content: center;
 }
@@ -17,7 +17,7 @@
 .headerList {
   display: flex;
   gap: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .headerListItem {
@@ -26,13 +26,14 @@
   gap: 0.5rem;
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--clr-theme);
   border-radius: 1rem;
+  color: var(--clr-theme);
 }
 
 .headerListItem:hover {
-  color: var(--white);
-  background-color: var(--blue);
+  color: var(--clr-white);
+  background-color: var(--clr-theme);
   cursor: pointer;
 }
 
@@ -46,8 +47,8 @@
 }
 
 .headerBtn {
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--clr-theme);
+  color: var(--clr-white);
   font-weight: 500;
   border: none;
   padding: 0.6rem;
@@ -56,14 +57,14 @@
 }
 
 .headerIcon {
-  color: var(--blue);
+  color: var(--clr-theme);
   padding: 0.5rem;
 }
 
 .headerSearch {
   height: 4rem;
   background-color: #fff;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--clr-theme);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -89,7 +90,7 @@
 }
 .headerText {
   font-size: 0.9rem;
-  color: var(--blue);
+  color: var(--clr-theme);
   width: 100%;
 }
 .headerSearchInput {
@@ -97,26 +98,26 @@
   outline: none;
 }
 .headerSearchInput {
-  border: 0.1rem solid var(--blue);
+  border: 0.1rem solid var(--clr-theme);
   border-radius: 0.5rem;
   outline: none;
-  color: var(--blue);
+  color: var(--clr-theme);
   width: 9.5rem;
 }
 
 .headerSearchText {
-  color: rgb(18, 1, 204);
-  text-decoration: underline;
+  
   cursor: pointer;
   font-size: 0.9rem;
   border-radius: 0.5rem;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--clr-white);
+  text-align: center;
 }
 
 .headerSearchBtn {
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--clr-theme);
+  color: var(--clr-white);
   font-weight: 500;
   border: none;
   border-radius: 0.5rem;
@@ -146,7 +147,7 @@
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   padding: 0.3rem;
-  color: var(--blue);
+  color: var(--clr-theme);
 }
 .optionItem {
   width: 200px;
@@ -179,6 +180,7 @@
 @media only screen and (max-width: 992px) {
   .headerList {
     gap: 1.5rem;
+    margin-bottom: 0.2rem;
   }
   .headerListItem {
     gap: 0.5rem;
@@ -211,7 +213,7 @@
   }
 
   .headerText {
-    color: var(--blue);
+    color: var(--clr-theme);
     width: 100%;
     text-align: center;
   }
@@ -233,7 +235,7 @@
   }
   .rdrDateDisplayItem input {
     max-width: 99%;
-    border: 2px solid var(--blue);
+    border: 2px solid var(--clr-theme);
   }
   .rdrDateDisplay {
     max-width: 99%;
