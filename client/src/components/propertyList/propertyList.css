@@ -31,13 +31,15 @@ border-radius: 0.5rem;
 
 .pListTitles > h1 {
   font-size: 1.1em;
-  color: var(--clr-theme);
+  color: var(--clr-black);
+  font-weight: 600;
   
 }
 
 .pListTitles > h2 {
   font-size: 0.8em;
   font-weight: 300;
+  color: var(--clr-text-dark-red);
 }
 
 @media only screen and (max-width: 992px) {

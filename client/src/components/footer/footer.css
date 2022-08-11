@@ -18,11 +18,11 @@
 
 .fListItem {
   margin-bottom: 0.8rem;
-  color: #003580;
+  color: var(--clr-link);
   cursor: pointer;
 }
 .fText {
-  background-color: var(--clr-theme);
+  background-color: var(--clr-bg-dark-red);
   color: white;
   display: flex;
   padding: 0.5rem;

@@ -23,37 +23,34 @@
 }
 
 .fpName {
-  color: var(--clr-theme);
-  font-weight: bold;
+  color: var(--clr-text-dark-red);
+  font-weight:500;
   padding: 0.4rem;
 }
 
 .fpCity {
   font-weight: 300;
   padding: 0.4rem;
+  color: var(--clr-black);
 }
 
 .fpPrice {
-  color: var(--clr-dark);
+  color: var(--clr-light-grey);
   padding: 0.4rem;
   font-size: 0.9em;
-
-
 }
-.fpRating{
+.fpRating {
   padding: 0.4rem;
-
 }
 
 .fpRating > button {
-  background-color: #d2164e;
-  color:#fff;
+  background-color: var(--clr-theme);
+  color: var(--clr-light-white);
   border-radius: 50%;
   padding: 3px;
   margin-right: 10px;
   font-weight: bold;
   border: none;
-
 }
 
 .fpRating > span {

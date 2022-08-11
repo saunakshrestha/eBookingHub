@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--clr-white);
+  background-color: var(--clr-dark-white);
   display: flex;
   justify-content: center;
 }
@@ -26,9 +26,9 @@
   gap: 0.5rem;
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
-  border: 2px solid var(--clr-theme);
+  border: 2px solid var(--clr-bg-dark-red);
   border-radius: 1rem;
-  color: var(--clr-theme);
+  color: var(--clr-text-dark-red);
 }
 
 .headerListItem:hover {
@@ -63,8 +63,9 @@
 
 .headerSearch {
   height: 4rem;
-  background-color: #fff;
+  background-color: var(--clr-white);
   border: 2px solid var(--clr-theme);
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -89,8 +90,8 @@
   justify-content: space-around;
 }
 .headerText {
-  font-size: 0.9rem;
-  color: var(--clr-theme);
+  font-size: 1em;
+  color: var(--clr-black);
   width: 100%;
 }
 .headerSearchInput {
@@ -106,14 +107,16 @@
 }
 
 .headerSearchText {
-  
   cursor: pointer;
-  font-size: 0.9rem;
-  border-radius: 0.5rem;
+  font-size: 1em;
   width: 100%;
-  background-color: var(--clr-white);
+  color: var(--clr-text-dark-red);
+
   text-align: center;
 }
+.headerIcon{
+    font-size: 1em;
+  }
 
 .headerSearchBtn {
   background-color: var(--clr-theme);
@@ -131,7 +134,13 @@
   position: absolute;
   top: 3.5rem;
   z-index: 3;
-  border: 0.1rem solid #002a66;
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 0.5rem;
+
+  
+}
+.rdrDateDisplayWrapper{
+  border-radius: 0.5rem;
 }
 
 /* styling for options of adult ,children & room */
@@ -139,13 +148,11 @@
   z-index: 2;
   position: absolute;
   top: 4rem;
-  right: 6rem;
+  right: 7rem;
   background-color: #fff;
   color: gray;
-  border: 0.1rem solid #002a66;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 0.5rem;
   padding: 0.3rem;
   color: var(--clr-theme);
 }
@@ -213,10 +220,23 @@
   }
 
   .headerText {
-    color: var(--clr-theme);
     width: 100%;
     text-align: center;
+    font-size: 1.2em;
   }
+  .headerSearchText{
+    font-size: 1.1em;
+  }
+  .headerIcon{
+    font-size: 1.2em;
+  }
+  .headerSearchBtn {
+  
+ 
+  padding: 0.3rem 0.4rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
   /* date for mobile view */
   .date {
     max-width: 99%;
@@ -247,5 +267,6 @@
   /* change posistion of option box of adult, children and room  */
   .options {
     top: 21rem;
+    right: 9rem;
   }
 }

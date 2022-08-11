@@ -4,60 +4,69 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color:var(--clr-white) ;
+  
 }
 
 .siImg {
-  width: 200px;
-  height: 200px;
+  width: 13rem;
+  height: 13rem;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .siDesc {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  line-height: 2;
   flex: 2;
-  color: rgb(42, 42, 42);
+  font-weight: 400;
+  color: var(--clr-black);
+  font-size: 1em;
 }
 
 .siTitle {
-  font-size: 20px;
-  color: var(--clr-hglts);
+  font-size: 1.25em;
+  color: var(--clr-black);
+  font-weight: 500;
 }
 
 .siDistance {
-  font-size: 12px;
+  font-size: 0.625em;
 }
 
 .siTaxiOp {
-  font-size: 12px;
-  background-color:var(--clr-theme);
-  color: white;
+  font-size: 0.625em;
+  background-color: var(--clr-bg-dark-red);
+  color: var(--clr-white);
   width: max-content;
   padding: 3px;
   border-radius: 5px;
 }
 
 .siSubtitle {
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: var(--clr-black);
 }
 
 .siFeatures {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .siCancelOp {
-  font-size: 12px;
-  color: #008009;
-  font-weight: bold;
+  font-size: 0.75em;
+  color: var(--clr-bg-dark-red);
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .siCancelOpSubtitle {
-  font-size: 12px;
-  color: #008009;
+  font-size:0.6em;
+  color: var(--clr-text-dark-red);
+  
 }
 
 .siDetails {
@@ -76,8 +85,8 @@
   font-weight: 500;
 }
 .siRating > button {
-  background-color: #d2164e;
-  color:#fff;
+  background-color: var(--clr-theme);
+  color: var(--clr-light-white);
   padding: 5px;
   font-weight: bold;
   border: none;
@@ -92,17 +101,18 @@
 }
 
 .siPrice {
-  font-size: 24px;
+  font-size: 1.25em;
+  color: var(--clr-light-grey);
 }
 
 .siTaxOp {
-  font-size: 12px;
-  color: gray;
+  font-size: 0.625em;
+  color: var(--clr-light-grey);
 }
 
 .siCheckButton {
-  background-color:var(--clr-hglts);
-  color: #fff;
+  background-color: var(--clr-theme);
+  color: var(--clr-white);
   padding: 10px 5px;
   border: none;
   cursor: pointer;

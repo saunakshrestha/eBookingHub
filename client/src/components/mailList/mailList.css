@@ -1,7 +1,7 @@
 .mail {
   width: 100%;
   margin-top: 1rem;
-  background-color: var(--clr-theme);
+  background-color: var(--clr-bg-dark-red);
   color: var(--clr-white);
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 
 .mailInputContainer > button {
   height: 2.8rem;
-  background-color: dodgerblue;
+  background-color: rgb(2, 105, 2);
   color: white;
   font-weight: 500;
   border: none;

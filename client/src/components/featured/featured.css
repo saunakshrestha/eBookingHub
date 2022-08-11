@@ -10,10 +10,15 @@
 .featuredItem {
   position: relative;
   color: white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  height: 15.635rem;
+  height: 16rem;
   flex: 1;
+  cursor: pointer;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+
   -webkit-text-fill-color: rgb(
     255,
     255,
@@ -26,9 +31,20 @@
 .featuredImg {
   width: 100%;
     height:16rem;
-
   object-fit: cover;
-  border-radius: 1rem;
+  transition: all 0.5s linear;
+  
+  
+
+}
+
+.featuredImg:hover{
+  
+ 
+  
+}
+.featuredItem:hover .featuredImg{ 
+  transform: scale(1.2);
 
 }
 
@@ -43,8 +59,10 @@
     flex-direction: column;
     width: 90%;
   }
-  .featuredImg{
+  .featuredItem{
+    flex: auto;
   }
+  
  
 }
 
