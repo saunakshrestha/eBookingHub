@@ -1,14 +1,18 @@
 .footer {
   width: 100%;
   font-size: 1rem;
+  margin-top: 2rem;
+  max-width: 1024px;
 }
 
 .fLists {
   width: 100%;
   display: flex;
-
+align-items: center;
   justify-content: space-around;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+ 
+  
 }
 
 .fList {
@@ -22,12 +26,13 @@
   cursor: pointer;
 }
 .fText {
-  background-color: var(--clr-bg-dark-red);
+  background-color: var(--clr-theme);
   color: white;
   display: flex;
   padding: 0.5rem;
   justify-content: center;
   font-size: 0.7rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 992px) {

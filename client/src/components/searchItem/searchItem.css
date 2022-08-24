@@ -28,7 +28,7 @@
 }
 
 .siTitle {
-  font-size: 1.25em;
+  font-size: 1.125em;
   color: var(--clr-black);
   font-weight: 500;
 }
@@ -111,7 +111,7 @@
 }
 
 .siCheckButton {
-  background-color: var(--clr-theme);
+  background-color: var(--clr-bg-dark-red);
   color: var(--clr-white);
   padding: 10px 5px;
   border: none;
