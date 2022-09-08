@@ -1,7 +1,11 @@
 .navbar {
-  height: 3.125rem;
-  background-color: var(--clr-theme);
-  color: var(--clr-white);
+  height: 3.5rem;
+background-color: #fff7f6;
+
+  
+
+font-size:1.2rem;
+  color: var(--clr-theme);
   display: flex;
   justify-content: center;
 }
@@ -21,6 +25,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+ 
+ 
 }
 
 .navButton {
@@ -31,10 +37,10 @@
   background-color: var(--clr-theme);
   color: var(--clr-white);
   border: 1px solid #f6f6f6;
-  border-radius: 0.5rem;
+  border-radius: 15px;
   box-shadow: rgba(45, 35, 66, 0.4);
   transition: all 100ms cubic-bezier(0.23, 1, 0.32, 1);
-  font-size: 0.75rem;
+  font-size: 0.75em;
 }
 
 .navButton:disabled {
@@ -50,7 +56,16 @@
   box-shadow: none;
 }
 
+@media only screen and (max-width: 300px) {
+  
+
+.navItems{
+   flex-direction: column;
+   margin-left: 0.2rem;
+}
+}
 @media only screen and (max-width: 768px) {
   
+
 
 }

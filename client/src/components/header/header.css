@@ -1,5 +1,4 @@
 .header {
-  background-color: var(--clr-dark-white);
   display: flex;
   justify-content: center;
 }
@@ -27,7 +26,7 @@
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
   border: 2px solid var(--clr-bg-dark-red);
-  border-radius: 1rem;
+  border-radius: 15px;
   color: var(--clr-text-dark-red);
 }
 
@@ -52,7 +51,7 @@
   font-weight: 500;
   border: none;
   padding: 0.6rem;
-  border-radius: 0.5rem;
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -62,20 +61,22 @@
 }
 
 .headerSearch {
+  
   height: 4rem;
-  background-color: var(--clr-white);
+  background-color: var(--clr-light-white);
   border: 2px solid var(--clr-theme);
- box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  border-radius: 1rem;
+  border-radius: 8px;
   margin-top: 2rem;
   width: 100%;
   font-size: 1rem;
   padding-right: 0.2rem;
   position: relative;
+  
 }
 
 @media only screen and (min-width: 992px) {
@@ -95,12 +96,12 @@
   width: 100%;
 }
 .headerSearchInput {
-  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   outline: none;
 }
 .headerSearchInput {
-  border: 0.1rem solid var(--clr-theme);
-  border-radius: 0.5rem;
+  border: 1px solid var(--clr-theme);
+  border-radius: 8px;
   outline: none;
   color: var(--clr-theme);
   width: 9.5rem;
@@ -123,7 +124,7 @@
   color: var(--clr-white);
   font-weight: 500;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   padding: 0.5rem;
   cursor: pointer;
   width: 100%;
@@ -204,19 +205,19 @@
     align-items: center;
     justify-content: space-around;
     height: 25rem;
-    max-width: 100%;
+    width: 100%;
+    
   }
 
-  .headerSearchItems:nth-child(n) {
-    border-bottom: 2px solid #000;
-    padding-bottom: 1rem;
-    /* line-break: after; */
-  }
+   
   .headerSearchItems {
     display: flex;
     flex-direction: column;
-    width: 100%;
     text-align: center;
+    width:102%;
+    border-bottom:2px solid var(--clr-theme);
+    padding-bottom: 1rem;
+
   }
 
   .headerText {

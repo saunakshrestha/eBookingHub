@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='fText'>Copyright © 2022 bookinghar/SaunakShrestha</div>
+      <div className='fText'>Copyright © 2022 eBookingHub</div>
     </>
   )
 }
