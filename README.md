@@ -1,6 +1,6 @@
-# bookinGhar
+# eBookingHub
 
-Bookinghar is a online reservation system. It is web based booking system.
+eBookingHub is a online reservation system. It is web based booking system.
 
 ## Tech Stack
 
