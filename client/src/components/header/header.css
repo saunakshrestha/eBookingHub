@@ -50,9 +50,16 @@
   color: var(--clr-white);
   font-weight: 500;
   border: none;
-  padding: 0.6rem;
+  padding: 0.5rem;
   border-radius: 15px;
   cursor: pointer;
+  border: 1px solid var(--clr-theme);
+
+}
+.headerBtn:hover {
+  color: var(--clr-theme);
+  background-color: var(--clr-white);
+
 }
 
 .headerIcon {
@@ -64,7 +71,7 @@
   
   height: 4rem;
   background-color: var(--clr-light-white);
-  border: 2px solid var(--clr-theme);
+  border: 1px solid var(--clr-theme);
 box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   display: flex;
   align-items: center;
@@ -74,19 +81,15 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
   margin-top: 2rem;
   width: 100%;
   font-size: 1rem;
-  padding-right: 0.2rem;
   position: relative;
   
 }
 
-@media only screen and (min-width: 992px) {
-  #destination {
-    display: none;
-  }
-}
+
 
 .headerSearchItems {
   display: flex;
+  
   align-items: center;
   justify-content: space-around;
 }
@@ -115,9 +118,7 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
 
   text-align: center;
 }
-.headerIcon{
-    font-size: 1em;
-  }
+
 
 .headerSearchBtn {
   background-color: var(--clr-theme);
@@ -125,10 +126,17 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
   font-weight: 500;
   border: none;
   border-radius: 8px;
-  padding: 0.5rem;
+  padding: 0.3rem;
   cursor: pointer;
   width: 100%;
   font-size: 0.9rem;
+  border: 1px solid var(--clr-theme);
+margin: 0 0.3rem;
+ 
+}
+.headerSearchBtn:hover {
+ color: var(--clr-theme);
+  background-color: var(--clr-white);
 }
 
 .date {
@@ -185,6 +193,27 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
   cursor: not-allowed;
 }
 
+@media only screen and (min-width: 992px) {
+  .headerSearchItems {
+  flex: 1;
+    border-right: 1px solid var(--clr-theme) ;
+height: 100%;
+padding-right: 0.5rem;
+  }
+  .headerText{
+    width: 65%;
+  }
+  
+  #destination{
+    width:35%;
+  }
+  .headerIcon{
+    font-size: 1.2em;
+  }
+}
+
+
+
 @media only screen and (max-width: 992px) {
   .headerList {
     gap: 1.5rem;
@@ -207,6 +236,7 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
     height: 25rem;
     width: 100%;
     
+    
   }
 
    
@@ -214,9 +244,10 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
     display: flex;
     flex-direction: column;
     text-align: center;
-    width:102%;
-    border-bottom:2px solid var(--clr-theme);
+    width:100%;
+  border-bottom: 1px solid var(--clr-theme);
     padding-bottom: 1rem;
+  
 
   }
 
@@ -232,8 +263,9 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
     font-size: 1.2em;
   }
   .headerSearchBtn {
-  
- 
+    display: flex;
+ margin-bottom: 0.3rem;
+ justify-content: center;
   padding: 0.3rem 0.4rem;
   cursor: pointer;
   font-size: 1.2rem;
@@ -256,7 +288,7 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
   }
   .rdrDateDisplayItem input {
     max-width: 99%;
-    border: 2px solid var(--clr-theme);
+    border: 1px solid var(--clr-theme);
   }
   .rdrDateDisplay {
     max-width: 99%;

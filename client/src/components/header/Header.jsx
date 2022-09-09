@@ -78,7 +78,7 @@ const Header = ({ type }) => {
               </div>
               <div className='headerSearchItem-Item2 headerSearchItems'>
                 <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
-                <p className='headerText'>Check In / Check Out</p>
+                <p className='headerText'>Check In - Check Out</p>
 
                 <span
                   onClick={() => setOpenDate(!openDate)}
