@@ -1,6 +1,6 @@
 .navbar {
   height: 3.5rem;
-background-color: #fff7f6;
+background-color: var(--clr-light-white2);
 
   
 
