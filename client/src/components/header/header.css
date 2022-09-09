@@ -24,16 +24,20 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1.125rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--clr-bg-dark-red);
-  border-radius: 15px;
-  color: var(--clr-text-dark-red);
+  padding: 0.2rem 0.3rem;
+  border: 1px solid var(--clr-bg-dark-red);
+  border-radius: 8px;cursor: pointer;
+  color: var(--clr-white);
+  background-color: var(--clr-theme);
+
+
 }
 
 .headerListItem:hover {
-  color: var(--clr-white);
-  background-color: var(--clr-theme);
-  cursor: pointer;
+  color: var(--clr-bg-dark-red);
+  background-color: var(--clr-white);
+
+  
 }
 
 /* header Description  */
